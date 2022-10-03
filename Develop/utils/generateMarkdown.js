@@ -11,6 +11,8 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {
 };
 
+// markdown constants for inquirer prompt answers
+
 const generateMarkdown = ({license, title, description, installation, usage, contribution, test, github, email}) => 
 
 // This is the README Template 
