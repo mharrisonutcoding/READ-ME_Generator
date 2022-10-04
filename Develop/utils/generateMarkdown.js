@@ -7,17 +7,30 @@ function renderLicenseBadge(license) {
   } else {
     return `![GitHub license](https://img.shields.io/badge/License-${license}-blue.svg)`;
   }
-};
+}
 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === 'none') {
+    return '';
+  } else {
+    return `- [License](#license)`;
+  }
+}
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-};
+  if (license === 'none') {
+    return '';
+  } else {
+    return `## License
+    This project utilizes the ${license} license.`;
+  }
+}
 
 // markdown constants for inquirer prompt answers
 
@@ -27,6 +40,8 @@ const generateMarkdown = ({license, title, description, installation, usage, con
 
 `
 # ${title}
+
+  ${renderLicenseBadge(license)}
 
 ## Description
 
@@ -38,7 +53,7 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
+- ${renderLicenseLink(license)}
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -55,9 +70,7 @@ ${usage}
 
 The success and completion of this project can be credited to ${contribution} 
 
-## License
-
-This applications utilizes the ${license} license. Seek license documentation for more information on licenses.
+${renderLicenseSection(license)}
 
 ## Tests
 
