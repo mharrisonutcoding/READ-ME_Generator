@@ -22,6 +22,10 @@ For installation:
 Seed into the /Develop directory and run this " node index.js " in the terminal.
 You will be prompted about your project in the terminal.
 
+Deployed Application Link : https://mharrisonutcoding.github.io/READ-ME_Generator/
+
+Application Demonstration Video: https://drive.google.com/file/d/1pKt6jMfbyP5O9vZwPut0pjoRfpDO5szS/view
+
 
 ## Credits
 Collaborators:

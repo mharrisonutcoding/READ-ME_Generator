@@ -1,4 +1,4 @@
-// returns a license badge based on which license is passed in
+// returns a license badge based on which license is passed in the user inputs
 // If there is no license, return message stating no license was chosen
 
 function renderLicenseBadge(license) {
@@ -41,7 +41,7 @@ const generateMarkdown = ({license, title, description, installation, usage, con
 `
 # ${title}
 
-  ${renderLicenseBadge(license)}
+${renderLicenseBadge(license)}
 
 ## Description
 
