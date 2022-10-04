@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Included packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs').promises;
 const { generateMarkdown } = require('./utils/generateMarkdown');
 
 
-// TODO: Create an array of questions for user input
+// Created an array of questions for user input
 inquirer.prompt([
 
     {
@@ -66,5 +66,4 @@ inquirer.prompt([
     err ? console.log(err) : console.log('Your file was created!')
     );
 });
-
 
